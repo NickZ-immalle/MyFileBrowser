@@ -9,6 +9,12 @@ namespace MyFileBrowser
     {
         static void Main(string[] args)
         {
+            string[] pets = { "dog", "cat", "bird" };
+            foreach (string value in pets)
+            {
+                Console.WriteLine(value);
+            }
+
             if (args.Length == 0)
             {
                 Console.WriteLine("Geef een argument mee !");
@@ -37,6 +43,7 @@ namespace MyFileBrowser
         static void ShowAllfilesInCurrentDirectory()
         {
             Console.WriteLine("Alle files in current directory:");
+
         }
     }
 }
