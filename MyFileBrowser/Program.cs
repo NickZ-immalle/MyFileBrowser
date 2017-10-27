@@ -18,29 +18,25 @@ namespace MyFileBrowser
                 switch (args[0])
                 {
                     case "-c":
-                        Console.WriteLine("Current Directory");
+                        ShowCurrentDirectory();
                         break;
                     case "-f":
-                        Console.WriteLine("Alle files in current directory:");
+                        ShowAllfilesInCurrentDirectory();
                         break;
                     default:
                         Console.WriteLine("Onbekend argument");
                         break;
                 }
-
-
-
-
-
-
-
-
-
-
-
-
-
             }
+        }
+        static void ShowCurrentDirectory()
+        {
+            Console.WriteLine("Current Directory");
+        }
+
+        static void ShowAllfilesInCurrentDirectory()
+        {
+            Console.WriteLine("Alle files in current directory:");
         }
     }
 }
